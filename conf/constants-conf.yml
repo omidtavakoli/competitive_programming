@@ -1,0 +1,14 @@
+# Declaring some constants
+MAX_SLEEP_TIME: 10  # maximum time for a producer to sleep
+MAX_TIME_OUT: 60  # maximum time for a producer to wait
+RETRIES: 5  # retries for sending a message by a producer
+MIN_FETCH_BYTES: 1073741824  # minimum Bytes to be fetched consumer (default: 1,073,741,824 Bytes = 1 GB)
+COMPRESSION_TYPE: gzip  # type of compression to use for sending data, values are ‘gzip’, ‘snappy’, ‘lz4’, None
+BUFFER_MEMORY: 503316480  # total Bytes of memory the producer should use to buffer records waiting to be sent to the server (defualt: 503,316,480 Bytes = 480 MB)
+MAX_SCROLL_SIZE: 3000  # maximum size of the scroll query
+MAX_QUERY_TIME_OUT: 120  # maximum time out for a query
+MAX_REQUEST_SIZE: 503316480  # maximum size of a request
+MAX_SCROLL_SLEEP_TIME: 60  # maximum sleep time between scroll attempts
+RUNNING_INTERVAL: 60  # interval time between two consecutive run of the program
+MAX_CONSUMER_RECORDS: 50000  # maximum number of records to be fetched by a consumer
+MAX_CONSUMER_TIME_OUT_MS: 30000  # maximum time out for consumer in ms

@@ -1,0 +1,39 @@
+project_es_config:
+    host:  0.0.0.0
+    port: 9200
+    authentication: true
+    username: elastic
+    password: changeme
+
+project_index_config:
+    index: project
+    doc_type: project_metadata
+
+source_es_config:
+    host:  0.0.0.0
+    port: 9200
+    authentication: true
+    username: elastic
+    password: changeme
+
+source_index_config:
+    index: index
+    doc_type: doc
+
+kafka_config:
+   host: 0.0.0.0
+   port: 9092
+
+consul_config:
+    host: 0.0.0.0
+    port: 8500
+
+project_metadata_index_config:
+    index: project_list
+
+project_config:
+    duration: 10
+
+global_config:
+    check_for_new_projects: 30
+    constants_conf: conf/constants-conf.yml
